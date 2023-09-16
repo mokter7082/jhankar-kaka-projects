@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="mt-10">
+      <h1 class="text-4xl text-center">
+        Welcome To
+        <span class="text-purple-700">Md Mokter Hossain</span>
+      </h1>
+    </header>
+    <main class="mt-8">
+      <section class="w-3/4 mx-auto">
+        <div class="grid grid-cols-3 gap-4">
+          <div class="bg-purple-600 p-8 text-white rounded">
+            <h1 class="text-3xl">Deposit</h1>
+            <h2 class="text-3xl mt-2">$<span id="deposit-amount">00</span></h2>
+          </div>
+          <div class="bg-purple-600 p-8 text-white rounded">
+            <h1 class="text-3xl">Widthdrow</h1>
+            <h2 class="text-3xl mt-2">
+              $ <span id="withdrow-amount">00</span>
+            </h2>
+          </div>
+          <div class="bg-purple-600 p-8 text-white rounded">
+            <h1 class="text-3xl">Total Balance</h1>
+            <h2 class="text-3xl mt-2">$<span id="total-balance">30</span></h2>
+          </div>
+        </div>
+      </section>
+      <section class="w-3/4 mx-auto mt-8">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-purple-600 p-8 rounded">
+            <h1 class="text-3xl">Deposit</h1>
+            <input
+              type="text"
+              id="deposit-input"
+              name="deposit"
+              placeholder="$00000"
+              class="border-2 border-gray-400 rounded block w-3/4 mt-4 px-2"
+            />
+            <button id="deposit" class="bg-pink-500 p-2 rounded mt-2">
+              Submit
+            </button>
+          </div>
+          <div class="bg-purple-600 p-8 rounded">
+            <h1 class="text-3xl">Widthdrow</h1>
+            <input
+              type="text"
+              id="widthdrow-input"
+              placeholder="$000"
+              class="border-2 border-gray-400 rounded block w-3/4 mt-4 px-2"
+            />
+            <button class="bg-yellow-400 p-2 rounded mt-2" id="widthdrow">
+              Submit
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>

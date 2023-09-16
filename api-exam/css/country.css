@@ -1,0 +1,11 @@
+#contrys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.list {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #000;
+  border-radius: 15px;
+  background-color: chocolate;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=h1, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="text-5xl text-center mt-16">
+      Lets Get Some <span class="text-blue-700">Mooooney</span>!!!
+    </h1>
+    <main class="w-3/4 mx-auto">
+      <section class="mt-8">
+        <div class="grid grid-cols-3 gap-4 text-white">
+          <div class="bg-blue-400 p-8 rounded">
+            <h3 class="text-2xl">Diposit</h3>
+            <h3 class="text-4xl">$<span id="diposit-total">00</span></h3>
+          </div>
+          <div class="bg-blue-400 p-8 rounded">
+            <h3 class="text-2xl">Withdrow</h3>
+            <h3 class="text-4xl">$ <span id="withdrow">00</span></h3>
+          </div>
+          <div class="bg-blue-400 p-8 rounded">
+            <h3 class="text-2xl">Balance</h3>
+            <h3 class="text-4xl">$ <span id="blance">50</span></h3>
+          </div>
+        </div>
+      </section>
+      <section class="mt-8">
+        <div class="grid grid-cols-2 gap-4">
+         <div class="bg-pink-400 p-4 rounded">
+             <h1 class="text-2xl">Please Deposit</h1>
+          <input
+            type="text"
+            class="border-2 border-gray-400 rounded block w-3/4 px-2"
+            name="diposit"
+            id="diposit-amount"
+            placeholder="$000000"
+          />
+          <button class="bg-yellow-600 p-2 rounded mt-2" id="diposit">
+            Diposit
+          </button>
+        </div>
+           <div class="bg-yellow-400 p-4 rounded">
+             <h1 class="text-2xl">Please Widthdrow</h1>
+          <input
+            type="text"
+            class="border-2 border-gray-400 rounded block w-3/4 px-2"
+            name="widthdrow"
+            id="widthdrow-amount"
+            placeholder="$000000"
+          />
+          <button class="bg-yellow-600 p-2 rounded mt-2" id="widthdrow">
+            Widthdrow
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="banking.js"></script>
+  </body>
+</html>

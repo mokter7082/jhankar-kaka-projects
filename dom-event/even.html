@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event niye click baji</title>
+  </head>
+  <body>
+    <button onclick="document.body.style.backgroundColor='black'">
+      Click 1
+    </button>
+    <button id="click-2">Click 2</button>
+    <button onclick="makeRed()">make red</button>
+    <button id="make-blue">make blue</button>
+    <button id="make-green">make green</button>
+    <script>
+      const btn2 = document.getElementById("click-2");
+      btn2.addEventListener("click", function () {
+        document.body.style.backgroundColor = "yellow";
+      });
+    </script>
+    <script src="my.js"></script>
+  </body>
+</html>

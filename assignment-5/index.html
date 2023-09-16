@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- INCLUIDE BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="">
+              <img class="w-75" src="./image/mac.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <section>
+              <div class="title">
+                <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                <p>
+                  Apple M1 chip with 8-core CPU with 4 performance Apple M1 chip
+                  with 8-core 7 Core GPU. and 16 core natuaral engin. 8GB
+                  unified memory. 156GB SSD stirage two thounderbold/USB for
+                  port magic mouse and magic keyboard US english
+                </p>
+              </div>
+              <div class="memory my-4">
+                <h6>Memory</h6>
+                <button id="withoutCost-memory" class="btn customButton">
+                  8GB unified memory
+                </button>
+                <button id="memory-price" class="btn customButton">
+                  16GB unified memory
+                </button>
+              </div>
+              <div class="storage my-4">
+                <h6>Storage</h6>
+                <button id="withoutCost-storage" class="btn customButton">
+                  256GB SSD storage
+                </button>
+                <button onclick="gbStorageCost()" class="btn customButton">
+                  512GB SSD storage
+                </button>
+                <button id="oneTbStorage-price" class="btn customButton">
+                  1TB SSD storage
+                </button>
+              </div>
+              <div class="storage my-4">
+                <h6>Choose your delivery option</h6>
+                <button id="withoutCost-delivery" class="btn customButton">
+                  Friday,aug 25 FREE Prime Delivery
+                </button>
+                <button onclick="deliveryCost()" class="btn customButton">
+                  Friday,aug 21 Delivery Change $20
+                </button>
+              </div>
+              <div class="price-area my-4 col-lg-7">
+                <table class="table">
+                  <tr>
+                    <th>Best Price</th>
+                    <th>$<span id="best-price">1299</span></th>
+                  </tr>
+                  <tr>
+                    <th>Extra Momory Cost</th>
+                    <th>$<span id="memory-cost">0</span></th>
+                  </tr>
+                  <tr>
+                    <th>Extra Storage Cost</th>
+                    <th>$<span id="storage-cost">0</span></th>
+                  </tr>
+                  <tr>
+                    <th>Delivery Change</th>
+                    <th>$<span id="delivery-cost">0</span></th>
+                  </tr>
+                  <tr>
+                    <th>Total Price</th>
+                    <th>$<span id="total-price">1299</span></th>
+                  </tr>
+                </table>
+                <p>Add Promo Code</p>
+                <input
+                  id="discount"
+                  type="text"
+                  class="form-control w-75 d-inline"
+                />
+                <button onclick="coponApply()" class="btn btn-danger">
+                  Apply
+                </button>
+              </div>
+            </section>
+          </div>
+          <hr />
+          <div class="col-lg-6 ms-auto">
+            <h2>Total: $<span id="stevTotal">1299</span></h2>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- INCLUIDE BOOTSTRAP JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

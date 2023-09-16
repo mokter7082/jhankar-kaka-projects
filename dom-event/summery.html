@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=pp, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="click-method"></p>
+    <button onclick="handleChange()">just function</button>
+    <button id="cilck-event">direct add even Listener function</button>
+    <button id="update">Update</button>
+    <input id="inputField" type="text" />
+    <script>
+      function handleChange() {
+        const clickingMethod = document.getElementById("click-method");
+        clickingMethod.innerText = "iam coming from function";
+      }
+      document
+        .getElementById("cilck-event")
+        .addEventListener("click", function () {
+          const clickingMethod = document.getElementById("click-method");
+          clickingMethod.innerText = "ami noton";
+        });
+      document.getElementById("update").addEventListener("click", function () {
+        const inpValue = document.getElementById("inputField");
+        const clickingMethod = document.getElementById("click-method");
+        clickingMethod.innerText = inpValue.value;
+      });
+    </script>
+  </body>
+</html>

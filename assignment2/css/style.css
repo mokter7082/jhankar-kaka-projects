@@ -1,0 +1,180 @@
+
+
+/* RE USEABLE CLASS */
+
+body{
+    background-color: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+/* TOP HEADER SITE CSS */
+.top-header{
+    background-color: #1B1464;
+    height: 400px;
+}
+nav{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 84%;
+    margin-left: 7%;
+    margin-bottom: 25px;
+}
+.top-header a{
+    text-decoration: none;
+    margin-left: 08px;
+    color: #fff;
+    padding: 08px;
+}
+.top-header a:hover{
+    background-color: indigo;
+}
+.top-header .button{
+    font-size: 20px;
+    background-color: #EA2027;
+    padding: 7px 22px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.command-1{
+    width: 60%;
+    margin-left: 08%;
+}
+.command-1 h1{
+    color: #fff;
+}
+.command-2{
+    width: 40%;
+}
+.command-2 img{
+    width: 70%;
+}
+/* PLAYER SITE DESGM */
+main{
+    margin-top: 30px;
+}
+.name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.player-description{
+    color: gray;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    
+}
+.card{
+    width: 280px;
+    height: 460px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+.player-thumnail img{
+    width: 277px;
+    height: 308px;
+   
+}
+/* hightlight SITE DESGM */
+
+.hilight{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 100px;
+}
+.left-hilight{
+    width: 37%;
+}
+.right-hilight{
+    width: 37%;
+}
+.right-hilight img{
+    width: 80%;
+    margin-left: 18%;
+}
+.button{
+    font-size: 20px;
+    background-color: #EA2027;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+/* footer SITE DESGM */
+.footer-1{
+    width: 30%;
+    margin-top: 80px;
+}
+.footer-1 img{
+    width: 70%;
+}
+.socile-icon{
+    margin-left: 14%;
+}
+.socile-icon a{
+    text-decoration: none;
+    margin-left: 08px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 08px;
+}
+
+/* media query */
+@media only screen and (max-width:668px) {
+    .top-header{
+        width: 100%;
+        background-color: red;
+    } 
+    .command-1{
+        width: 100%;
+    
+    }
+    .container{
+        display: block;    
+    }
+    .command-2{
+        width: 100%;
+    }
+    .command-2 img{
+        width: 50%;
+    }
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+    nav .h{
+        display: none;
+    }
+    .top-header .button{
+        text-align: center;
+    }
+    .left-hilight {
+        width: 100%;
+    }
+    .right-hilight {
+    display: none;
+}
+.footer-1 {
+    width: 100%;
+    text-align: center;
+  
+}
+}
